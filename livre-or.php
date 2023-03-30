@@ -47,7 +47,8 @@ session_start();
         <tbody>
             <tr>
                 <?php foreach ($result as $key => $value) { ?>
-                    <td class='ptab2'><?php echo $value['date']; ?></td>
+                    <td class='ptab2'><?php $str = explode("-",$value['date']); echo $str[2] . " / ". $str[1] . " / ". $str[0];
+                    ?></td>
                     <td class='ptab2'><?php echo $value['login']; ?></td>
                     <td class='ptab2'><?php echo $value['commentaire']; ?></td>
             </tr><?php } 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$message = "";
+$message = ""; 
 $bd = new mysqli('localhost', 'root', '', 'livreor');
 
 if (isset($_POST['submit'])) {
